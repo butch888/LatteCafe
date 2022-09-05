@@ -1,0 +1,146 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>	
+		<!-- Заголовок страницы в браузере -->
+		<title>Начальная страница</title>
+		
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<!-- Отображаемое тело страницы -->
+<body>
+	<!-- Обертка -->
+	<div class="wrapper">
+		<!-- Шапка -->
+		<header class="header">
+			<div class="container">
+				<div class="container__header">
+					
+					<nav class="header__menu" >
+						<a class="header__link" href="/">About</a>
+						<a class="header__link" href="/">Menu</a>
+						<a class="header__link" href="/">Info</a>
+						<a class="header__link" href="/">Booking</a>
+					</nav>
+
+
+					<div class="header__title">LATTE CAFE</div>
+
+
+					<div class="header__icons">
+						<a class="header__icon" href="/"><img src="./images/icons/mail-header.svg" alt=""></a>
+						<a class="header__icon" href="/"><img src="./images/icons/facebook-header.svg" alt=""></a>
+						<a class="header__icon" href="/"><img src="./images/icons/instagram-header.svg" alt=""></a>
+					</div>
+
+				</div>
+				<div class="container__img"><img src="./images/header-img.jpeg" alt=""></div>
+			</div>
+		</header>
+
+		<!-- Контент -->
+		<main class="main">
+
+			<div class="main__about">
+				<div class="about-us title-text">About Us</div>
+				<div class="text">Tucked away in the corner of Wellington, Latte Cafe is a local neighbourhood cafe and bar. Latte is all about doing what we love, in a city that we love. We keep stocked with local produce and pastries. Bring your family for a bite, or meet your friends for a coffee or warm drink.</div>
+			</div>
+			
+			<div class="main__menu">
+				<div class="menu__content">
+					<div class="menu title-text">Menu</div>
+					<div class="menu__text">We change our menu every season. Here is what we are currently dishing up.</div>
+					<div class="menu__button">
+						<button onClick="onClickButton1()" class="menu-button button1">Food Menu</button>
+						<button onClick="onClickButton2()" class="menu-button button2">Drinks Menu</button>
+						<button onClick="onClickButton3()" class="menu-button button3">Takeaway Menu</button>
+					</div>
+				</div>
+				<div class="menu__img"><img id="menuImgId" src="./images/menu-img1.jpeg" alt=""></div>
+			</div>
+
+			<div class="schedule">
+					<div class="container__schedule">
+						<div class="schedule__location">
+							<div class="location__title">Location</div>
+							<div class="location__text">101 Cuba St,<br>Te Aro, Wellington</div>
+						</div>
+					
+						<div class="schedule__hours">
+							<div class="location__title">Hours</div>
+							<div class="location__text">Tuesday to Friday<br>7AM - 3PM<br><br>Saturday to Sunday<br>8AM - 3PM</div>
+						</div>
+						<div class="schedule__mondays">
+							<div class="location__title">Mondays?</div>
+							<div class="location__text">We are cloused on Mondays<br>to reflect and refuel</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="pictures">
+				<div class="container__pictures">
+					<div class="picturres__left">
+						<div class="left__pic1"><img src="./images/left-pic1.jpeg" alt=""></div>
+						<div class="left__pic2"><img src="./images/left-pic2.jpeg" alt=""></div>
+					</div>
+					<div class="pictures__right">
+						<div class="right__pic1"><img src="./images/right-pic1.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="down-block">
+				<div class="container__down-block">
+					<div class="down-block__left">Award winning<br> cafe and bar.</div>
+					<div class="down-block__right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+			</div>
+
+
+		</main>
+
+
+		
+
+		<!-- Подвал -->
+		<footer class="footer">
+			<div class="container__footer">
+				<div class="footer__link1">
+					<a href="">Home</a>
+					<a href="">About</a>
+					<a href="">Menu</a>
+					<a href="">Info</a>
+					<a href="">Contact</a>
+					<a href="">Bookings</a>
+					<a href="">Privacy Policy</a>
+				</div>
+				<div class="footer__link2">
+					<a href="">Style Guide</a>
+					<a href="">Licenses</a>
+					<a href="">Instructions</a>
+					<a href="">Changelog</a>
+					<a href="">Password</a>
+					<a href="">404</a>
+				</div>
+				<div class="footer__text">
+					<span>@ Latte Cafe 2022.</span>
+					<span>Built Nikolai Bain.</span>
+					<span>Powered Webflow.</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="./js/script.js"></script>
+</body>
+</html>
